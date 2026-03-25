@@ -1,49 +1,39 @@
-
-
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
-
-
-/*<weight>: Use a value from 300 to 700
-  <uniquifier>: Use a unique and descriptive class name*/
-
 
 body {
     font-family: "Quicksand", sans-serif;
-    font-optical-sizing: auto;
-    font-weight:400;
-    font-style: normal;
-    background-color: #f4f4f4;
+    font-weight: 400;
 
-    background-image: url('header3');
-    background-repeat: no-repeat; 
-    background-size: cover;      
-    background-position: center; 
-    background-attachment: fixed; 
-    
-    color: #640d31; 
-    
-    
+     background-image: 
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url('header3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    color: #2f3e46;
 }
 
-*{
+/* cursor */
+* {
     cursor: url('https://cdn.cursors-4u.net/css-previews/shiny-magenta-spinning-heart-a44fb078-css.webp') 0 0, auto !important;
 }
 
-
-
+/* topo */
 #topo-principal {
-    background-color: #ffeb93;
-    color: rgb(76, 90, 138);
+    background-color: rgba(242, 195, 0, 0.9);
+    color: #2f3e46;
     padding: 20px;
     text-align: center;
 }
 
-
-h1, h2{
-    color: #2c3e50;
+/* títulos */
+h1, h2 {
+    color: #2f3e46;
 }
 
-
+/* menu */
 nav ul {
     list-style: none;
     padding: 0;
@@ -53,16 +43,15 @@ nav ul {
 }
 
 nav a {
-    color: rgb(76, 90, 138);
+    color: #2f3e46;
     text-decoration: none;
 }
-
 
 nav ul li:nth-child(2) {
     text-transform: uppercase;
 }
 
-
+/* lista */
 .lista-animais {
     display: flex;
     gap: 20px;
@@ -70,42 +59,39 @@ nav ul li:nth-child(2) {
     margin-top: 40px;
 }
 
-
+/* cards */
 .card {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
     width: 200px;
     padding: 15px;
     text-align: center;
-
-   
-    border: 2px dashed #dbb855;
+    border: 2px dashed #f2c300;
 }
 
-
 .card.destaque {
-    border: 3px solid rgb(67, 122, 185);
+    border: 3px solid #6b7c85;
     transform: scale(1.05);
 }
 
-
+/* texto */
 p span {
     font-weight: bold;
-    color: blue;
+    color: #f2c300;
 }
 
-
+/* botão */
 button {
-    background-color: #ff1493;
-    color: white;
+    background-color: #f2c300;
+    color: #2f3e46;
     border: none;
     padding: 10px;
     border-radius: 8px;
     margin-top: 10px;
 }
 
-
 button:hover {
-    background-color: #27ae60;
+    background-color: #6b7c85;
+    color: white;
     cursor: pointer;
 }
