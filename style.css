@@ -1,11 +1,20 @@
 
-@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+
+/*<weight>: Use a value from 300 to 700
+  <uniquifier>: Use a unique and descriptive class name*/
+
 
 body {
-    font-family: 'DotGothic16', Arial, sans-serif;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:400;
+    font-style: normal;
     background-color: #f4f4f4;
 
-    background-image: url('pink_.jpg'); 
+    background-image: url('header3');
     background-repeat: no-repeat; 
     background-size: cover;      
     background-position: center; 
@@ -23,8 +32,8 @@ body {
 
 
 #topo-principal {
-    background-color: #333;
-    color: white;
+    background-color: #ffeb93;
+    color: rgb(76, 90, 138);
     padding: 20px;
     text-align: center;
 }
@@ -44,7 +53,7 @@ nav ul {
 }
 
 nav a {
-    color: white;
+    color: rgb(76, 90, 138);
     text-decoration: none;
 }
 
@@ -70,12 +79,12 @@ nav ul li:nth-child(2) {
     text-align: center;
 
    
-    border: 2px dashed #ff42a1;
+    border: 2px dashed #dbb855;
 }
 
 
 .card.destaque {
-    border: 3px solid gold;
+    border: 3px solid rgb(67, 122, 185);
     transform: scale(1.05);
 }
 

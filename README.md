@@ -1,78 +1,111 @@
-🎯 Desafios de Estilização
+respostas da comparação
 
-Siga as instruções abaixo para construir seu conjunto de regras CSS. Cada item foca em um conceito fundamental de seleção.
-1. Estilização Global (Seletor de Tag)
 
-Aplique uma base visual para todo o documento. O seletor de tag afeta todos os elementos do tipo especificado na página.
 
-    Alvo: body
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap'); ->importa a fonte do google
 
-    Propriedades: * background-color: #f4f4f4;
 
-        font-family: Arial, sans-serif;
 
-2. Identificação Única (Seletor de ID)
 
-Utilize o ID para estilizar um elemento que ocorre apenas uma vez na página. IDs possuem alta especificidade.
+body {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:400;
+    font-style: normal;
+    background-color: #f4f4f4;
 
-    Alvo: #topo-principal
+    background-image: url('header3');
+    background-repeat: no-repeat; 
+    background-size: cover;      
+    background-position: center; 
+    background-attachment: fixed; 
+    
+    color: #640d31; 
+    
+    
+}
 
-    Propriedades: * Fundo escuro (#333), texto branco e padding de 20px.
+*{
+    cursor: url('https://cdn.cursors-4u.net/css-previews/shiny-magenta-spinning-heart-a44fb078-css.webp') 0 0, auto !important;
+}
 
-3. Padrões Repetíveis (Seletor de Classe)
 
-Classes são ideais para componentes que se repetem, como cartões de conteúdo.
 
-    Alvo: .card
+#topo-principal {
+    background-color: #ffeb93;
+    color: rgb(76, 90, 138);
+    padding: 20px;
+    text-align: center;
+}
 
-    Propriedades: * background-color: white;
 
-        border-radius: 10px;
+h1, h2{
+    color: #2c3e50;
+}
 
-        width: 200px;
 
-4. Relação de Hierarquia (Seletor Descendente)
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
 
-Estilize elementos com base na sua posição dentro de outros elementos.
+nav a {
+    color: rgb(76, 90, 138);
+    text-decoration: none;
+}
 
-    Alvo: p span (todos os spans dentro de parágrafos)
 
-    Propriedades: * font-weight: bold;
+nav ul li:nth-child(2) {
+    text-transform: uppercase;
+}
 
-        color: blue;
 
-5. Otimização de Código (Seletor de Agrupamento)
+.lista-animais {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 40px;
+}
 
-Aplique o mesmo estilo a múltiplos seletores simultaneamente para evitar repetição de código.
 
-    Alvo: h1, h2
+.card {
+    background-color: white;
+    border-radius: 10px;
+    width: 200px;
+    padding: 15px;
+    text-align: center;
 
-    Propriedades: * color: #2c3e50;
+   
+    border: 2px dashed #dbb855;
+}
 
-6. Especialização (Seletor de Classe Específica)
 
-Aprenda a diferenciar um elemento que possui múltiplas classes.
+.card.destaque {
+    border: 3px solid rgb(67, 122, 185);
+    transform: scale(1.05);
+}
 
-    Alvo: .card.destaque
 
-    Propriedades: * border: 3px solid gold;
+p span {
+    font-weight: bold;
+    color: blue;
+}
 
-        transform: scale(1.05);
 
-7. Estados do Usuário (Pseudo-classe :hover)
+button {
+    background-color: #ff1493;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
 
-Adicione interatividade baseada na ação do ponteiro do mouse.
 
-    Alvo: button:hover
-
-    Propriedades: * background-color: #27ae60;
-
-        cursor: pointer;
-
-8. Seleção Estrutural (Pseudo-classe :nth-child)
-
-Selecione um elemento com base em sua posição exata na lista de irmãos.
-
-    Alvo: nav ul li:nth-child(2)
-
-    Propriedades: * text-transform: uppercase;
+button:hover {
+    background-color: #27ae60;
+    cursor: pointer;
+}
