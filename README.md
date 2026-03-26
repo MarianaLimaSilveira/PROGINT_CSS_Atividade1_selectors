@@ -1,111 +1,23 @@
-respostas da comparação
+Foquei em seguir as propriedades obrigatórias, mas adicionei algumas linhas extras para melhorar o visual.
+
+No `body`, além do `background-color` e `font-family` pedidos:
+
+* `background-image`: define uma imagem de fundo
+* `linear-gradient`: cria uma camada escura por cima da imagem (overlay)
+* `background-size: cover`: faz a imagem ocupar toda a tela
+* `background-position: center`: centraliza a imagem
+* `background-attachment: fixed`: fixa o fundo ao rolar a página
 
 
+Na `.card`,:
 
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap'); ->importa a fonte do google
-
-
-
-
-body {
-    font-family: "Quicksand", sans-serif;
-    font-optical-sizing: auto;
-    font-weight:400;
-    font-style: normal;
-    background-color: #f4f4f4;
-
-    background-image: url('header3');
-    background-repeat: no-repeat; 
-    background-size: cover;      
-    background-position: center; 
-    background-attachment: fixed; 
-    
-    color: #640d31; 
-    
-    
-}
-
-*{
-    cursor: url('https://cdn.cursors-4u.net/css-previews/shiny-magenta-spinning-heart-a44fb078-css.webp') 0 0, auto !important;
-}
+* `padding`: espaço interno
+* `border`: borda decorativa
 
 
+Essas propriedades aparecem no `nav ul` e na `.lista-animais` para melhorar a organização da página:
 
-#topo-principal {
-    background-color: #ffeb93;
-    color: rgb(76, 90, 138);
-    padding: 20px;
-    text-align: center;
-}
+* `display: flex`: organiza elementos em linha
+* `justify-content`: alinha horizontalmente
+* `gap`: espaçamento entre elementos
 
-
-h1, h2{
-    color: #2c3e50;
-}
-
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-nav a {
-    color: rgb(76, 90, 138);
-    text-decoration: none;
-}
-
-
-nav ul li:nth-child(2) {
-    text-transform: uppercase;
-}
-
-
-.lista-animais {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    margin-top: 40px;
-}
-
-
-.card {
-    background-color: white;
-    border-radius: 10px;
-    width: 200px;
-    padding: 15px;
-    text-align: center;
-
-   
-    border: 2px dashed #dbb855;
-}
-
-
-.card.destaque {
-    border: 3px solid rgb(67, 122, 185);
-    transform: scale(1.05);
-}
-
-
-p span {
-    font-weight: bold;
-    color: blue;
-}
-
-
-button {
-    background-color: #ff1493;
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 8px;
-    margin-top: 10px;
-}
-
-
-button:hover {
-    background-color: #27ae60;
-    cursor: pointer;
-}
